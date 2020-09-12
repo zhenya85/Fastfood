@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Inking;
+  src: url(fonts/InkingRegular.ttf); }
+@font-face {
+  font-family: Kurale;
+  src: url("fonts/Kurale.ttf"); }
+@font-face {
+  font-family: Columbina;
+  src: url("fonts/Columbina.ttf"); }
+body {
+  background-image: url(img/fone.jpg); }
+
+.brand-fonts {
+  font-family: Inking;
+  font-size: 30px;
+  font-weight: 600; }
+
+.container-food {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #fff;
+  background-image: url(https://html5book.ru/wp-content/uploads/2015/10/background54.png); }
+
+.field-option {
+  position: relative;
+  top: -10px;
+  box-shadow: 0 0 5px gray;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 600px 50px;
+  grid-template-areas: 'oFood basket' 'infoBar infoBar'; }
+
+.order-food {
+  grid-area: oFood; }
+
+.basket {
+  grid-area: basket;
+  padding: 30px;
+  text-align: center; }
+  .basket h2 {
+    display: block;
+    margin: 0 auto;
+    font-family: Kurale;
+    font-size: 34px;
+    font-style: italic; }
+  .basket .basket-list {
+    margin: 0 auto;
+    height: 95%;
+    font-family: Columbina;
+    text-align: left;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 500; }
+    .basket .basket-list .order-button {
+      float: right; }
+
+.info-bar {
+  grid-area: infoBar; }
+
+.designBlock {
+  border: 1px dotted gray; }
+
+.orderSum {
+  font-size: 24px;
+  color: orchid; }
+
+/*# sourceMappingURL=style.css.map */
