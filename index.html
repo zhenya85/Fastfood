@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Закусочная фастфуда</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="shop.js" defer></script>
+    <script src="events.js" defer></script>
+    <script>
+        window.onload=function (ev) {
+            //var orderFood=document.getElementsByClassName('order-food');
+            shops[0].outputData();
+
+        }
+    </script>
+</head>
+<body>
+<div class="container-food">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand brand-fonts" href="#">Закусочная</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="menu" class="nav navbar-nav">
+                    <li class="active"><a href="#" data-id="menu-hamburger">Гамбургеры</a></li>
+                    <li><a href="#" data-id="menu-filling">Начинки</a></li>
+                    <li><a href="#" data-id="menu-additionally">Добавки</a></li>
+                    <li><a href="#" data-id="menu-drink">Напитки</a></li>
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="field-option">
+        <div id="order-food" class="order-food designBlock"> </div>
+        <div id="basket" class="basket designBlock">
+            <h2>Ваш заказ</h2>
+            <div id="basket-list" class="basket-list"></div>
+        </div>
+        <div id="info-bar" class="info-bar designBlock"></div>
+
+    </div>
+</div>
+</body>
+</html>
